@@ -56,7 +56,7 @@ In the _neural_net_training_ folder, open NN_training.ipynb in jupyter notebook.
 This python file loads the trained neural net model, detects and locates keyboard letters, tracks the location of the robot gripper, and sends desired gripper location to Arduino through ROS. Modify the "Inputs" section in the beginning to reflect your camera and your environment setup.
 
 ### 3.2 main/main2/main2.ino
-This is an Arduino file and it directly control the robot arm. Given the desired x-y-z position, the file performs inverse kinematics to find the joint angles and then send them to the servos.
+This is an Arduino file and it directly control the robot arm. Given the desired x-y-z position, the file performs inverse kinematics to find the joint angles and then send them to the servos. This file references configuration.h, which contains motor calibration info (see _Motor Calibration_ section)
 
 ### 3.3 Launching the System
 After everything is setup, run the following commands:
