@@ -1,3 +1,16 @@
+# Table of Contents
+[Overview](#Overview)
+[Software Packages](#Software Packages)
+[Hardware List](#Hardware List)
+[Launching the System](#Launching the System)
+[Wiring: robot servos to Arduino](#Wiring: robot servos to Arduino)
+[Motor Calibration](#Motor Calibration)
+[Inverse Kinematics](#Inverse Kinematics)
+[Coordinate Systems](#Coordinate Systems)
+[Finding the Intrinsic Camera Matrix](#Finding the Intrinsic Camera Matrix)
+[Communication between Arduino and Computer through USB](#Communication between Arduino and Computer through USB)
+
+
 # Overview
 The robot arm stretches out to chase a laser dot. This project involves building a 3-DOF arm, performing inverse kinematics, controlling the arm with Arduino and ROS, processing the webcam video using OpenCV functions such as perspective transform, and calculating the laser position relative to the arm using intrinsic camera matrix and transformation matrices.  
 See [YouTube Demo](https://youtu.be/46Q9ypHZdVk)
