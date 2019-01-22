@@ -8,7 +8,6 @@ from keras import regularizers
 from glob import glob
 import cv2
 import pandas as pd
-import matplotlib.pyplot as plt
 from geometry_msgs.msg import Pose
 from std_msgs.msg import Bool
 import rospy
