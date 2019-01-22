@@ -73,7 +73,7 @@ After everything is setup, run the following commands:
     - Note that the port name could be ttyACM**1**, ttyACM**2**, etc.)
 
 # Wiring from Robot Servos to Arduino
-The file main_arduino/configuration.h has variables that depends on which pins are connected to which servos. If you don't want to change those variables, wire the servos to the pins in the following way:
+The file main/main2/configuration.h has variables that depends on which pins are connected to which servos. If you don't want to change those variables, wire the servos to the pins in the following way:
 
 - 5: Base
 - 6: Shoulder
@@ -83,7 +83,7 @@ The file main_arduino/configuration.h has variables that depends on which pins a
 # Motor Calibration
 The servos are controlled by PWM values in Arduino. Since <Servo.h> library is used, the servo values range from 0 to 180. However, when deriving the kinematics equations, we need to assign an angle convention to each servo. The angle convention does not need to match up with the PWM values. Therefore, motor calibration is needed to convert between them.
 
-The file main_arduino/configuration.h contains the parameters for the conversion. Note that the parameters are named with “MAX” and “MIN”, but they aren’t really maximum and minimum because the servos will still go beyond these values if you command them. It is better to think of the “MAX” and the “MIN”  as “Position 1” and “Position 2”.
+The file main/main2/configuration.h contains the parameters for the conversion. Note that the parameters are named with “MAX” and “MIN”, but they aren’t really maximum and minimum because the servos will still go beyond these values if you command them. It is better to think of the “MAX” and the “MIN”  as “Position 1” and “Position 2”.
 
 The following picture shows the angle convention for each servo (Base, Shoulder, and Elbow):
 ![](pictures/servos_angle_convention.png)
@@ -94,13 +94,13 @@ The following picture shows how the parameters in configuration.h is determined:
 ![](pictures/elbow_angle.png)
 
 # Inverse Kinematics
-The code in main_arduino/ik.cpp does the inverse kinematics slightly differently, but the concept is the same.
+The code in main/main2/ik.cpp does the inverse kinematics slightly differently, but the concept is the same.
 
 ![](pictures/ik1.png)
 ![](pictures/ik2.png)
 
 # Finding the Intrinsic Camera Matrix
-A ROS package called [camera_calibrator](http://wiki.ros.org/camera_calibration#Camera_Calibrator) is used to find the intrinsic camera matrix, which is used in the main1.py file.
+A ROS package called [camera_calibrator](http://wiki.ros.org/camera_calibration#Camera_Calibrator) is used to find the intrinsic camera matrix, which is used in the main/main1.py file.
 
 The matrix can be used to map 3D points in the world to 2D points in an image (or vice versa).
 ![](pictures/camera_matrix.png)
