@@ -27,19 +27,19 @@ ROS Kinetic Kame
 Arduino IDE  
 opencv-python (3.4.1.15)  
 numpy (1.15.4)  
-tensorflow-gpu (1.12.0)
-keras (2.2.4)
-scikit-learn (0.18.1)
-pandas (0.17.1)
-jupyter notebook
+tensorflow-gpu (1.12.0)  
+keras (2.2.4)  
+scikit-learn (0.18.1)  
+pandas (0.17.1)  
+jupyter notebook  
 
 # Hardware List
 Arduino Uno R3  
 Breadboard and Jumper Wires  
 MeArm Robot Arm  
 Logitech HD Pro Webcam C920   
-Computer with Nvidia GPU GTX1080 (running Ubuntu 16.04)
-Keyboard
+Computer with Nvidia GPU GTX1080 (running Ubuntu 16.04)  
+Keyboard  
 InstaMorph Moldable Plastic
 
 # Pipeline
