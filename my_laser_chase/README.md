@@ -1,14 +1,14 @@
 # Table of Contents
 [Overview](#Overview)  
-[Software Packages](#Software Packages)  
-[HardwareList](#Hardware List)  
-[Launching the System](#Launching the System)  
-[Wiring: robot servos to Arduino](#Wiring: robot servos to Arduino)  
-[Motor Calibration](#Motor Calibration)  
-[Inverse Kinematics](#Inverse Kinematics)  
-[Coordinate Systems](#Coordinate Systems)  
-[Finding the Intrinsic Camera Matrix](#Finding the Intrinsic Camera Matrix)  
-[Communication between Arduino and Computer through USB](#Communication between Arduino and Computer through USB)
+[Software Packages](#Software-Packages)  
+[Hardware List](#Hardware-List)  
+[Launching the System](#Launching-the-System)  
+[Wiring: robot servos to Arduino](#Wiring:-robot-servos-to-Arduino)  
+[Motor Calibration](#Motor-Calibration)  
+[Inverse Kinematics](#Inverse-Kinematics)  
+[Coordinate Systems](#Coordinate-Systems)  
+[Finding the Intrinsic Camera Matrix](#Finding-the-Intrinsic-Camera-Matrix)  
+[Communication between Arduino and Computer through USB](#Communication-between-Arduino-and-Computer-through-USB)
 
 
 # Overview
