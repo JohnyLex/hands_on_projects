@@ -1,7 +1,7 @@
 # Table of Contents
 [Overview](#Overview)  
 [Software Packages](#Software Packages)  
-[Hardware List](#Hardware List)  
+[HardwareList](#Hardware List)  
 [Launching the System](#Launching the System)  
 [Wiring: robot servos to Arduino](#Wiring: robot servos to Arduino)  
 [Motor Calibration](#Motor Calibration)  
