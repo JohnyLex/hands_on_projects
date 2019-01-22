@@ -1,5 +1,6 @@
 # Overview
-The robot detects and locates all letters on a keyboard using Deep Learning . When a user enters a word, the robot will move to corresponding letters and type it out.
+The robot arm stretches out to chase a laser dot. This project involves building a 3-DOF arm, performing inverse kinematics, controlling the arm with Arduino and ROS, processing the webcam video using OpenCV functions such as perspective transform, and calculating the laser position relative to the arm using intrinsic camera matrix and transformation matrices.  
+See [YouTube Demo](https://youtu.be/46Q9ypHZdVk)
 
 Here is a picture showing the interaction between the hardware and the software:
 ![](pictures/big_picture.png)
@@ -8,19 +9,19 @@ Here is a picture showing what the actual setup looks like:
 ![](pictures/big_picture2.png)
 
 # Software Packages
-ROS Kinetic Kame
-Arduino IDE
-opencv-python (3.4.1.15)
-numpy (1.15.4)
+ROS Kinetic Kame  
+Arduino IDE  
+opencv-python (3.4.1.15)  
+numpy (1.15.4)  
 
 # Hardware List
-Arduino Uno R3
-Breadboard and Jumper Wires
-MeArm Robot Arm
-Logitech HD Pro Webcam C920
-Mini Webcam Tripod for Logitech Webcam C920
-Laser Pointer
-Computer (running Ubuntu 16.04)
+Arduino Uno R3  
+Breadboard and Jumper Wires  
+MeArm Robot Arm  
+Logitech HD Pro Webcam C920  
+Mini Webcam Tripod for Logitech Webcam C920  
+Laser Pointer  
+Computer (running Ubuntu 16.04)  
 
 # Launching the System
 After everything is setup, run the following commands:
@@ -39,10 +40,10 @@ Then run main_arduino/main_arduino.ino and upload the sketch to Arduino
 # Wiring: robot servos to Arduino
 The file main_arduino/configuration.h has variables that depends on which pins are connected to which servos. If you don't want to change those variables, wire the servos to the pins in the following way:
 
-5: Base 
-6: Shoulder 
-9: Elbow 
-10: Gripper
+- 5: Base 
+- 6: Shoulder 
+- 9: Elbow 
+- 10: Gripper
 
 # Motor Calibration
 The servos are controlled by PWM values in Arduino. Since <Servo.h> library is used, the servo values range from 0 to 180. However, when deriving the kinematics equations, we need to assign an angle convention to each servo. The angle convention does not need to match up with the PWM values. Therefore, motor calibration is needed to convert between them.
@@ -86,13 +87,13 @@ The matrix can be used to map 3D points in the world to 2D points in an image (o
 ![](pictures/pinhole_model.png)
 
 # Communication between Arduino and Computer through USB
-ROS and Arduino through rosserial
+ROS and Arduino through rosserial  
 http://wiki.ros.org/rosserial_arduino/Tutorials
  
-Permanently set USB device to have read and write access
+Permanently set USB device to have read and write access  
 http://ask.xmodulo.com/change-usb-device-permission-linux.html
  
-Temporarily set USB device to have read/write access
+Temporarily set USB device to have read/write access  
 sudo chmod a+rw /dev/ttyACM0
  
 Change USB settings (number of subscribers/publishers and input/output buffers)
@@ -101,5 +102,3 @@ Change USB settings (number of subscribers/publishers and input/output buffers)
 - in the newly created ros.h file, add #include <ros_empty.h>
 - #include <foo/foo.h> does not work if foo is in the libraries file for some unknown reason.
 - in the newly created ArduinoHardware.h, change &Serial1 to &Serial
-
-
