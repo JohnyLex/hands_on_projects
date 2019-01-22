@@ -72,6 +72,14 @@ After everything is setup, run the following commands:
     - `rosrun rosserial_python serial_node.py /dev/ttyACM0`
     - Note that the port name could be ttyACM**1**, ttyACM**2**, etc.)
 
+
+# Convolutional Neural Net (CNN) Architecture
+The following picture is the architecture of my CNN. The input layer is a 30x30x1 image. The output is a vector of 61 scores, each representing how similar the input is to the corresponding letter, number, or symbol.  
+
+ReLU is used for activation functions. Max Pooling is used to reduce layer sizes. Batch Normalization is used to prevent over-fitting and increase training speed. Dropout is used to further prevent over-fitting.
+
+![](pictures/CNN.png)
+
 # Wiring from Robot Servos to Arduino
 The file main/main2/configuration.h has variables that depends on which pins are connected to which servos. If you don't want to change those variables, wire the servos to the pins in the following way:
 
