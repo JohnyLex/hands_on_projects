@@ -11,7 +11,7 @@
 [Communication between Arduino and Computer through USB](#Communication-between-Arduino-and-Computer-through-USB)
 
 # Overview
-The robot arm stretches out to chase a laser dot. This project involves building a 3-DOF arm, performing inverse kinematics, controlling the arm with Arduino and ROS, processing the webcam video using OpenCV functions such as perspective transform, and calculating the laser position relative to the arm using intrinsic camera matrix and transformation matrices.  
+In this project, a robot arm stretches out to chase a laser dot. The project involves building a 3-DOF arm, performing inverse kinematics, controlling the arm with Arduino and ROS, processing the webcam video using OpenCV functions such as perspective transform, and calculating the laser position relative to the arm using intrinsic camera matrix and transformation matrices. 
 
 See [YouTube Demo](https://youtu.be/46Q9ypHZdVk)
 
