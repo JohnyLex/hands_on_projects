@@ -3,7 +3,7 @@
 [Software Packages](#Software-Packages)  
 [Hardware List](#Hardware-List)  
 [Launching the System](#Launching-the-System)  
-[Wiring: robot servos to Arduino](#Wiring:-robot-servos-to-Arduino)  
+[Wiring from Robot Servos to Arduino](#Wiring-from-Robot-Servos-to-Arduino)  
 [Motor Calibration](#Motor-Calibration)  
 [Inverse Kinematics](#Inverse-Kinematics)  
 [Coordinate Systems](#Coordinate-Systems)  
@@ -50,7 +50,7 @@ Then run main_arduino/main_arduino.ino and upload the sketch to Arduino
 - Terminal 3
     - rosrun rosserial_python serial_node.py /dev/ttyACM0    (note that it could be ACM1 ....)
 
-# Wiring: robot servos to Arduino
+# Wiring from Robot Servos to Arduino
 The file main_arduino/configuration.h has variables that depends on which pins are connected to which servos. If you don't want to change those variables, wire the servos to the pins in the following way:
 
 - 5: Base 
