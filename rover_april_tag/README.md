@@ -27,6 +27,6 @@ Note that this is a large file (around 2.2 GB), so please make sure your network
 - `cd catkin_ws`
 - `catkin_make`
 
-# Launching the Systme
+# Launching the System
 - `roslaunch robot_launch robot.launch`
 - `roslaunch robot_control robot_control.launch`
